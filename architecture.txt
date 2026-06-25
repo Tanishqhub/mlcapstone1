@@ -1,0 +1,18 @@
+project1/
+├── data/
+│   ├── generate_data.py          # Script to generate synthetic churn data
+│   └── customer_churn.csv        # Generated dataset
+├── models/
+│   ├── model.pkl                 # Trained ML model (XGBoost or Random Forest)
+│   └── preprocessor.pkl          # Fitted preprocessor pipeline (scaling, encoding)
+├── notebooks/
+│   └── eda_and_prototyping.ipynb # Notebook covering steps 1-10 (EDA to Model Saving)
+├── src/
+│   ├── __init__.py
+│   ├── data_processor.py         # Data preprocessing and pipeline definition
+│   ├── train.py                  # Production training & hyperparameter tuning script
+│   └── inference.py              # Production prediction engine
+├── app.py                        # FastAPI Backend API (serving predictions)
+├── ui.py                         # Streamlit Frontend UI (user interface)
+├── requirements.txt              # Project dependencies
+└── README.md                     # Documentation
